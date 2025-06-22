@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <figure class="logo">
+        <picture>
+          <img
+            id="logoImg"
+            src="./assets/logo.jpeg"
+            alt="BrainerX Restaurant"
+          />
+        </picture>
+        <figcaption>BrainerX</figcaption>
+      </figure>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button>Reservation Table</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="heroSection">
+        <h1>BrainerX</h1>
+        <p>
+          <b>Experience authentic Italian cuisine in the heart of the city</b>
+        </p>
+        <div>
+          <button>Make Reservation</button>
+          <button id="menuButton">View Menu</button>
+        </div>
+      </section>
+      <br />
+      <section id="secondSection">
+        <aside>
+          <span class="tag">Our Story</span>
+          <h2>Authentic Italian Flavors Since 1985</h2>
+          <p>
+            For over three decades, Bella Vista has been serving the finest
+            Italian cuisine, crafted with love and tradition. Our recipes have
+            been passed down through generations, bringing you the authentic
+            taste of Italy.
+          </p>
+          <br />
+          <p>
+            From our wood-fired pizzas to our handmade pasta, every dish is
+            prepared with the freshest ingredients and utmost care. Join us for
+            an unforgettable dining experience.
+          </p>
+
+          <ul>
+            <li>
+              <span class="highlight"> 38+ </span>
+              <span class="highlight-text"> Years Experience </span>
+            </li>
+            <li>
+              <span class="highlight"> 50k+ </span>
+              <span class="highlight-text"> Happy Customers </span>
+            </li>
+            <li>
+              <span class="highlight"> ⭐4.9 </span>
+              <span class="highlight-text"> Rating </span>
+            </li>
+          </ul>
+        </aside>
+        <picture class="restaurant-image">
+          <img
+            id="restaurantImage"
+            src="./assets/aside pic.jpg"
+            alt="BrainerX Restaurant"
+          />
+        </picture>
+      </section>
+
+      <section id="menuSection">
+        <span class="tag">Our Menu</span>
+        <h2>Signature Dishes</h2>
+        <p>
+          Discover our most beloved dishes, crafted with authentic Italian
+          recipes and the finest ingredients
+        </p>
+        <br />
+        <ul>
+          <li>
+            <figure>
+              <picture>
+                <img
+                  class="menu"
+                  src="./assets/menu/pizza.webp"
+                  alt="Margherita Pizza"
+                />
+              </picture>
+              <figcaption>
+                <div class="menu-item">
+                  <h3>Margherita Pizza</h3>
+                  <span>$18</span>
+                </div>
+                <p>
+                  Fresh mozzarella, basil,tomato on our signature wood-fired
+                  crust
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <picture>
+                <img
+                  class="menu"
+                  src="./assets/menu/pasta.jpg"
+                  alt="Pasta Carbonara"
+                />
+              </picture>
+              <figcaption>
+                <div class="menu-item">
+                  <h3>Pasta Carbonara</h3>
+                  <span>$22</span>
+                </div>
+                <p>
+                  Creamy pasta with pancetta, eggs, and Parmigiano-Reggiano
+                  cheese
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <picture>
+                <img
+                  class="menu"
+                  src="./assets/menu/buco.jpg"
+                  alt="Osso Buco"
+                />
+              </picture>
+              <figcaption>
+                <div class="menu-item">
+                  <h3>Osso Buco</h3>
+                  <span>$32</span>
+                </div>
+                <p>
+                  Braised veal shanks with vegetables, white wine, and broth
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <picture>
+                <img
+                  class="menu"
+                  src="./assets/menu/tiramisu.webp"
+                  alt="Tiramisu"
+                />
+              </picture>
+              <figcaption>
+                <div class="menu-item">
+                  <h3>Tiramisu</h3>
+                  <span>$12</span>
+                </div>
+                <p>
+                  Classic Italian dessert with layers of coffee-soaked
+                  ladyfingers
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <picture>
+                <img
+                  class="menu"
+                  src="./assets/menu/risotto.jpg"
+                  alt="risotto ai Funghi"
+                />
+              </picture>
+              <figcaption>
+                <div class="menu-item">
+                  <h3>Risotto ai Funghi</h3>
+                  <span>$24</span>
+                </div>
+                <p>
+                  Creamy arborio rice with mixed wild mushrooms and truffle oil
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <picture>
+                <img class="menu" src="./assets/menu/fish.jpg" alt="Branzino" />
+              </picture>
+              <figcaption>
+                <div class="menu-item">
+                  <h3>Branzino</h3>
+                  <span>$28</span>
+                </div>
+                <p>
+                  Mediterranean sea bass with lemon, herbs, and roasted
+                  vegetables
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <button>View Full Menu</button>
+      </section>
+
+      <section id="contactSection">
+        <aside>
+          <span class="tag">Reservations</span>
+          <h2>Book Your Table</h2>
+          <p>
+            Reserve your table for an unforgettable dining experience. We
+            recommend booking in advance, especially for weekend dinners and
+            special occasions.
+          </p>
+          <ul>
+            <li>⭐ Accommodates parties of 2-12 guests</li>
+            <li>⭐ Extensive wine selection available</li>
+            <li>⭐ Special occasion packages available</li>
+          </ul>
+        </aside>
+
+        <form>
+          <h3>Make a Reservation</h3>
+          <div>
+            <input required type="text" placeholder="First Name" />
+            <input required type="text" placeholder="Last Name" />
+          </div>
+          <input required type="email" placeholder="Email Address" />
+          <input required type="tel" placeholder="Phone Number" />
+          <div>
+            <input required type="date" placeholder="mm/dd/yyyy" />
+            <input required type="time" />
+          </div>
+          <input
+            required
+            type="number"
+            placeholder="Number of Guests"
+            min="1"
+            max="12"
+          />
+          <input type="text" placeholder="Special Requests (optional)" />
+          <input id="submit" type="submit" value="Reserve Table" />
+          <br />
+        </form>
+      </section>
+
+      <section id="visitSection">
+        <span class="tag">Visit Us</span>
+        <h2>Location & Hours</h2>
+
+        <ul>
+          <li>
+            <img
+              src="./assets/icon/location.svg"
+              alt="location icon"
+              width="50px"
+            />
+            <h3>Address</h3>
+            <p>123 Main Street</p>
+            <p>Downtown District</p>
+            <p>New York, NY 10001</p>
+          </li>
+          <br />
+          <li>
+            <img
+              src="./assets/icon/phone.svg"
+              alt="location icon"
+              width="50px"
+            />
+
+            <h3>Contact</h3>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@bellavista.com</p>
+            <p>Reservations: (555) 123-4568</p>
+          </li>
+          <br />
+          <li>
+            <img
+              src="./assets/icon/clock.svg"
+              alt="location icon"
+              width="50px"
+            />
+            <h3>Hours</h3>
+            <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <figure class="logo">
+            <picture>
+              <img
+                id="logoImg"
+                src="./assets/logo.jpeg"
+                alt=" BrainerX restaurant logo"
+                width="200px"
+              />
+            </picture>
+            <figcaption>BrainerX</figcaption>
+          </figure>
+          <p>Authentic Italian cuisine in the heart of the city since 1985.</p>
+        </li>
+        <li>
+          <h4>Quick Links</h4>
+          <ul class="quick-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </li>
+        <li>
+          <h4>Services</h4>
+          <ul class="quick-links">
+            <li><a href="">Dine-in</a></li>
+            <li><a href="">Takeout</a></li>
+            <li><a href="">Catering</a></li>
+            <li><a href="">Private Events</a></li>
+          </ul>
+        </li>
+        <li>
+          <h4>Follow Us</h4>
+          <ul class="social-media">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </li>
+      </ul>
+      <hr style="margin: 20px; border-color:rgba(102, 103, 102, 0.8);" />
+      <p style="text-align: center; padding: 30px">
+        © 2025 Bella Vista Restaurant. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

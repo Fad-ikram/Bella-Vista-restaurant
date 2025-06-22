@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  --primery-color: #d97806;
+  --background-color: rgb(249, 243, 225);
+  --secondary-color: #333(255, 251, 235);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+}
+#logoImg {
+  width: 50px;
+  height: 50px;
+}
+header {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  padding: 8px 20px;
+}
+header nav {
+  visibility: hidden;
+  height: 0;
+}
+header figcaption {
+  font-size: 20px;
+  font-weight: bold;
+}
+button {
+  background-color: var(--primery-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+#heroSection {
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+  padding: 120px 60px;
+}
+#heroSection h1 {
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#heroSection p {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#heroSection > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#menuButton {
+  background-color: white;
+  color: black;
+}
+
+.tag {
+  background-color: var(--background-color);
+  color: var(--primery-color);
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#secondSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  margin-top: 20px;
+}
+
+#secondSection h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#secondSection p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+#secondSection ul {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  list-style-type: none;
+}
+#secondSection li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#restaurantImage {
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+}
+.highlight {
+  color: var(--primery-color);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#menuSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px;
+  gap: 20px;
+}
+#menuSection h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#menuSection > p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#menuSection figure {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(201, 180, 124);
+  border-radius: 8px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+#menuSection figure img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#menuSection ul {
+  display: grid;
+  gap: 35px;
+  list-style-type: none;
+  grid-template-columns: 1fr;
+}
+
+#menuSection figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#menuSection li {
+  list-style-type: none;
+}
+#menuSection figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+}
+
+.tag {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primery-color);
+}
+
+#menuSection button {
+  background-color: transparent;
+  color: var(--primery-color);
+  border: 1px solid var(--primery-color);
+}
+#menuSection button:hover {
+  color: white;
+  background-color: var(--primery-color);
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#visitSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+#visitSection ul {
+  list-style-type: none;
+  text-align: center;
+  width: 90%;
+}
+
+#visitSection li {
+  padding: 10px 0;
+  border: #f3ba78 1px solid;
+  border-radius: 8px;
+  height: 23vh;
+  transition: all 0.3s ease;
+}
+#visitSection li:hover {
+  background-color: var(--background-color);
+  transform: scale(1.05);
+}
+#visitSection h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#visitSection span {
+  margin-top: 30px;
+}
+
+#contactSection {
+  background-color: rgb(255 251 235);
+  padding: 64px 0;
+}
+
+#contactSection aside {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 25px;
+  gap: 20px;
+}
+
+#contactSection h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contactSection li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px 0;
+}
+
+#contactSection form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 15px;
+  padding: 32px;
+  border: 1px solid var(--primery-color);
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+}
+#contactSection div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#contactSection div input {
+  width: 40%;
+}
+#contactSection input {
+  padding: 12px;
+  border: 1px solid var(--primery-color);
+  border-radius: 5px;
+}
+#submit {
+  background-color: var(--primery-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#submit:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: rgb(17 24 39);
+  color: white;
+}
+footer > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  gap: 30px;
+  list-style-type: none;
+}
+
+footer li ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(102, 103, 102);
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: white;
+}
+footer figcaption {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    visibility: visible;
+    height: auto;
+  }
+  header figcaption {
+    font-size: 24px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    align-items: center;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+
+  #heroSection > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .restaurant-image {
+    align-self: self-start;
+  }
+  #restaurantImage {
+    width: 80%;
+  }
+  #secondSection {
+  padding: 50px 30px;
+}
+  #menuSection ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #menuSection figure img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #contactSection div input {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #secondSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .restaurant-image{
+    width: 80%;
+  }
+    #restaurantImage {
+    width: 100%;
+  }
+  #secondSection > picture {
+    width: 50%;
+  }
+  #secondSection img {
+    height: 55vh;
+  }
+  #secondSection aside {
+    width: 45%;
+  }
+  #menuSection ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #visitSection ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  #visitSection li {
+    width: 30%;
+    height: 26vh;
+  }
+
+  #contactSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  #contactSection form {
+    width: 65%;
+  }
+
+  footer {
+    padding: 48px 30px;
+  }
+  footer > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+  }
+}
