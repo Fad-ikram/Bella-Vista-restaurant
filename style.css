@@ -224,7 +224,7 @@ button:hover {
   padding: 10px 0;
   border: #f3ba78 1px solid;
   border-radius: 8px;
-  height: 23vh;
+
   transition: all 0.3s ease;
 }
 #visitSection li:hover {
@@ -269,21 +269,20 @@ button:hover {
   flex-direction: column;
   justify-items: center;
   gap: 15px;
-  padding: 32px;
+  padding: 30px;
   border: 1px solid var(--primery-color);
   border-radius: 8px;
   margin-left: 20px;
   margin-right: 20px;
   background-color: white;
 }
-#contactSection div {
+.form-inputs {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  gap: 10px;
 }
-#contactSection div input {
-  width: 40%;
+.form-inputs input {
+  width: 50%;
 }
 #contactSection input {
   padding: 12px;
@@ -352,7 +351,13 @@ footer h4 {
   flex-direction: row;
   gap: 15px;
 }
-
+.tag {
+  transition: all 0.3s ease;
+}
+.tag:hover {
+  background-color: var(--primery-color);
+  color: white;
+}
 @media (min-width: 600px) {
   header {
     display: flex;
@@ -373,6 +378,12 @@ footer h4 {
     align-items: center;
     list-style: none;
   }
+  .nav-links a {
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: var(--primery-color);
+  }
   a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -390,8 +401,8 @@ footer h4 {
     width: 80%;
   }
   #secondSection {
-  padding: 50px 30px;
-}
+    padding: 50px 30px;
+  }
   #menuSection ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -417,10 +428,10 @@ footer h4 {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .restaurant-image{
+  .restaurant-image {
     width: 80%;
   }
-    #restaurantImage {
+  #restaurantImage {
     width: 100%;
   }
   #secondSection > picture {
