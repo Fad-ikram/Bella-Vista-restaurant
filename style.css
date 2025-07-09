@@ -224,7 +224,6 @@ button:hover {
   padding: 10px 0;
   border: #f3ba78 1px solid;
   border-radius: 8px;
-
   transition: all 0.3s ease;
 }
 #visitSection li:hover {
@@ -279,7 +278,7 @@ button:hover {
 .form-inputs {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
 }
 .form-inputs input {
   width: 50%;
